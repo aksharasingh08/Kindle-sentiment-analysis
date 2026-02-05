@@ -19,7 +19,7 @@ Content 5-core dataset of product reviews from Amazon Kindle Store category from
 
 ![Full Dataset](dataset.png)
 
-For this use case we only need two columns from the dataset - "reviewText" and "rating"*.
+For this use case we only need two columns from the dataset - "reviewText" and "rating".
 
 ---
 
@@ -27,9 +27,9 @@ We follow the following steps:
 
 ## STEP 1 - Processing and cleaning
 
-This preprocessing pipeline converts numerical ratings into binary sentiment labels (positive = 1, negative = 0) and cleans raw review text for NLP tasks. 
+This preprocessing pipeline converts numerical ratings into binary sentiment labels (positive = 1, negative = 0) and cleans raw review text for NLP tasks, where positive reviews are the ones with rating greater than 3. 
 
-The steps include case normalization, removal of special characters, URLs, HTML tags, and stopwords, along with whitespace normalization. 
+The steps include lowering of case, removal of special characters, URLs, HTML tags, and stopwords, along with whitespace normalization. 
 
 ![Text Preprocessing](preprocessing_output.png)
 
